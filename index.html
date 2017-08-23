@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Oxygen" rel="stylesheet">
 <style>
 h1 {
   text-align: center;
@@ -10,7 +10,15 @@ h1 {
   color: #333;
   letter-spacing: 10px;
   text-transform: uppercase;
-  font-weight: 400;
+  padding: 50px 50px 0px 50px
+}
+h2 {
+  font-family: "Oxygen"; Arial;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+  padding: 0px 50px 50px 50px
 }
 button {
   background-color: #ff69b4;
@@ -59,56 +67,62 @@ $(document).ready(function(){
 </head>
 <body>
 
-<h1 style="padding: 50px">The Designer's<span style="color:#ff69b4"><br>Cheatsheet<br></span>for writing<br><span style="color:#feae1b"> Newsletter</span> Html</h1>
+<h1>The Designer's <span style="color:#ff69b4">Cheatsheet </span>for<br>coding<span style="color:#feae1b"> bulletproof</span> Newsletters</h1>
+
+<h2>Sometimes a quick reminder ... is entirely necessary.</h2>
 
 <div class="container">
   <div class="row">
     <div class="col-md-4">
       <button id="addHeader">Add Header</button>
-      <div id="header" style="display: none">
-  <pre>
-    <code>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
-    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
-    &lt;style&gt;
-    </code>
-  </pre>
-</div>
     </div>
     <div class="col-md-4">
       <button id="addBody">Add Body</button>
-      <div id="body" style="display: none">
-  <pre>
-    <code>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
-    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
-    &lt;style&gt;
-    </code>
-  </pre>
-</div>
     </div>
     <div>
       <button id="addImage">Add Image</button>
-      <div id="image" style="display: none">
-  <pre>
-    <code>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
-    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
-    &lt;style&gt;
-    </code>
-  </pre>
-</div>
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div id="header" style="display: none">
+  <pre>
+    <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+      &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+      &lt;style&gt;
+    </code>
+  </pre>
+</div>
+  <div id="body" style="display: none">
+  <pre>
+    <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+      &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+      &lt;style&gt;
+    </code>
+  </pre>
+</div>
+  <div id="image" style="display: none">
+  <pre>
+    <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+      &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+      &lt;style&gt;
+    </code>
+  </pre>
+</div>
+</div>
+
 </body>
 </html>
