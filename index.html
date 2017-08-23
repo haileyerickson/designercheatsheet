@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+h1 {
+  text-align: center;
+  font-family: "Montserrat"; Arial;
+  color: #333;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+button {
+  background-color: #ff69b4;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Montserrat", Arial;
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 20px 80px;
+  margin: 0 auto;
+  display: block;
+}
+#header {
+    width: 100%;
+    text-align: left;
+    padding:20px 60px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function myToggle(buttonId, divId) {
+  $("#" + buttonId).click(function(){
+    $("#" + divId).toggle();
+  });
+}
+$(document).ready(function(){
+  myToggle("addHeader", "header");
+  myToggle("addBody", "body");
+  myToggle("addImage", "image");
+});
+// $(document).ready(function(){$("#addHeader").click(function(){$("#header").toggle();});});
+// $(document).ready(function(){
+//   $("#addBody").click(function(){
+//       $("#body").toggle();
+//   });
+// });
+// $(document).ready(function(){
+//   $("#addImage").click(function(){
+//       $("#image").toggle();
+//   });
+// });
+</script>
+</head>
+<body>
+
+<h1 style="padding: 50px">The Designer's<span style="color:#ff69b4"><br>Cheatsheet<br></span>to Newsletter Html</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <button id="addHeader">Add Header</button>
+      <div id="header" style="display: none">
+  <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+    &lt;style&gt;
+    </code>
+  </pre>
+</div>
+    </div>
+    <div class="col-md-4">
+      <button id="addBody">Add Body</button>
+      <div id="body" style="display: none">
+  <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+    &lt;style&gt;
+    </code>
+  </pre>
+</div>
+    </div>
+    <div>
+      <button id="addImage">Add Image</button>
+      <div id="image" style="display: none">
+  <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;
+    &lt;style&gt;
+    </code>
+  </pre>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
